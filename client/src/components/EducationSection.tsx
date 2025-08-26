@@ -15,7 +15,7 @@ const EducationSection = () => {
       institution: 'Vidya Mandir Matriculation Higher Secondary School',
       duration: '2021 - 2023',
       status: 'Completed',
-      description: 'Completed higher secondary education with strong foundation in mathematics, physics, and computer science.',
+      description: 'Completed higher secondary education with strong foundation in mathematics and physics.',
     },
   ];
 
