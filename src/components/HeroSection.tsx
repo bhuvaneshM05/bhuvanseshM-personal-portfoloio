@@ -1,20 +1,20 @@
 import { Button } from '@/components/ui/button';
 import { Download, Mail, Star } from 'lucide-react';
 import profilePhoto from '@/assets/profile-photo.jpg';
-
 const HeroSection = () => {
   const scrollToContact = () => {
     const element = document.querySelector('#contact');
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
   const scrollToExperience = () => {
     const element = document.querySelector('#experience');
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16">
+  return <section id="home" className="min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-4">
         <div className="relative bg-gradient-to-br from-hero-bg to-hero-light rounded-3xl p-8 md:p-12 overflow-hidden">
           {/* Decorative elements */}
@@ -23,9 +23,7 @@ const HeroSection = () => {
           </div>
           
           <div className="absolute top-4 right-32 flex items-center space-x-1 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} size={12} className="fill-yellow-400 text-yellow-400" />
-            ))}
+            {[...Array(5)].map((_, i) => <Star key={i} size={12} className="fill-yellow-400 text-yellow-400" />)}
           </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -44,19 +42,10 @@ const HeroSection = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button 
-                  onClick={scrollToExperience}
-                  size="lg" 
-                  className="bg-white text-primary hover:bg-white/90 font-semibold rounded-full px-8"
-                >
+                <Button onClick={scrollToExperience} size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold rounded-full px-8">
                   View Portfolio
                 </Button>
-                <Button 
-                  onClick={scrollToContact}
-                  variant="outline" 
-                  size="lg" 
-                  className="border-white text-white hover:bg-white hover:text-primary rounded-full px-8"
-                >
+                <Button onClick={scrollToContact} variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary rounded-full px-8">
                   <Mail className="mr-2 h-4 w-4" />
                   Hire me
                 </Button>
@@ -71,20 +60,14 @@ const HeroSection = () => {
                 
                 {/* Profile photo */}
                 <div className="relative z-10 w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/30">
-                  <img 
-                    src={profilePhoto} 
-                    alt="Bhuvanesh M - Computer Science Student" 
-                    className="w-full h-full object-cover"
-                  />
+                  
                 </div>
 
                 {/* Experience badge */}
                 <div className="absolute bottom-4 right-4 bg-white rounded-2xl p-4 shadow-lg">
                   <div className="text-center">
                     <div className="flex justify-center mb-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} size={14} className="fill-primary text-primary" />
-                      ))}
+                      {[...Array(5)].map((_, i) => <Star key={i} size={14} className="fill-primary text-primary" />)}
                     </div>
                     <div className="text-2xl font-bold text-gray-900">3+</div>
                     <div className="text-sm text-gray-600">Projects</div>
@@ -95,8 +78,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
