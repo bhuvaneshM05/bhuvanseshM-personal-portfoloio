@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Download, Mail, Star } from 'lucide-react';
-import profilePhoto from '@/assets/profile-photo.png';
+
 const HeroSection = () => {
   const scrollToContact = () => {
     const element = document.querySelector('#contact');
@@ -59,11 +59,16 @@ const HeroSection = () => {
                 <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-white/20 to-white/10 rounded-full absolute inset-0"></div>
                 
                 {/* Profile photo */}
-                <div className="relative z-10 w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/30">
+                <div className="relative z-10 w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/30 bg-white/10">
                   <img 
                     src="/profile-photo.png" 
                     alt="Bhuvanesh M - Computer Science Student" 
                     className="w-full h-full object-cover"
+                    onError={(e) => {
+                      console.log("Image failed to load");
+                      e.currentTarget.style.display = 'none';
+                    }}
+                    onLoad={() => console.log("Image loaded successfully")}
                   />
                 </div>
 
