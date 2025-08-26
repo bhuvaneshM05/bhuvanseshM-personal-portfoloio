@@ -61,7 +61,7 @@ const HeroSection = () => {
                 {/* Profile photo */}
                 <div className="relative z-10 w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/30">
                   <img 
-                    src="/lovable-uploads/38f0256f-e021-43a9-99c9-abc1d77a10d6.png" 
+                    src="/profile-photo.png" 
                     alt="Bhuvanesh M - Computer Science Student" 
                     className="w-full h-full object-cover"
                   />
