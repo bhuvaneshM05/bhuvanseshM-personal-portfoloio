@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="relative bg-gradient-to-br from-hero-bg to-hero-light rounded-3xl p-8 md:p-12 overflow-hidden">
           {/* Decorative elements */}
-          <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+          <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
             <span className="text-white text-sm font-medium">Hello!</span>
           </div>
           
@@ -45,7 +45,7 @@ const HeroSection = () => {
                 <Button onClick={scrollToExperience} size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold rounded-full px-8">
                   View Portfolio
                 </Button>
-                <Button onClick={scrollToContact} variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary rounded-full px-8">
+                <Button onClick={scrollToContact} variant="outline" size="lg" className="border-white/50 text-white bg-white/10 hover:bg-white hover:text-primary rounded-full px-8">
                   <Mail className="mr-2 h-4 w-4" />
                   Hire me
                 </Button>
@@ -55,6 +55,17 @@ const HeroSection = () => {
             {/* Right content - Profile photo */}
             <div className="lg:w-1/2 flex justify-center relative">
               <div className="relative">
+                {/* Experience badge - above image */}
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-2xl p-4 shadow-lg z-20">
+                  <div className="text-center">
+                    <div className="flex justify-center mb-1">
+                      {[...Array(5)].map((_, i) => <Star key={i} size={14} className="fill-primary text-primary" />)}
+                    </div>
+                    <div className="text-2xl font-bold text-gray-900">3+</div>
+                    <div className="text-sm text-gray-600">Projects</div>
+                  </div>
+                </div>
+                
                 {/* Background circle */}
                 <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-white/20 to-white/10 rounded-full absolute inset-0"></div>
                 
@@ -72,16 +83,6 @@ const HeroSection = () => {
                   />
                 </div>
 
-                {/* Experience badge */}
-                <div className="absolute bottom-4 right-4 bg-white rounded-2xl p-4 shadow-lg">
-                  <div className="text-center">
-                    <div className="flex justify-center mb-1">
-                      {[...Array(5)].map((_, i) => <Star key={i} size={14} className="fill-primary text-primary" />)}
-                    </div>
-                    <div className="text-2xl font-bold text-gray-900">3+</div>
-                    <div className="text-sm text-gray-600">Projects</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
