@@ -8,8 +8,8 @@ const HeroSection = () => {
       behavior: 'smooth'
     });
   };
-  const scrollToExperience = () => {
-    const element = document.querySelector('#experience');
+  const scrollToAbout = () => {
+    const element = document.querySelector('#about');
     element?.scrollIntoView({
       behavior: 'smooth'
     });
@@ -38,7 +38,7 @@ const HeroSection = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button onClick={scrollToExperience} size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold rounded-full px-8">
+                <Button onClick={scrollToAbout} size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold rounded-full px-8">
                   View Portfolio
                 </Button>
                 <Button 
