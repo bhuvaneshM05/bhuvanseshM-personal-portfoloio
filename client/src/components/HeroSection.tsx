@@ -73,8 +73,8 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                {/* Profile photo with light gray background */}
-                <div className="relative z-10 w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden border-4 border-white/30 bg-gray-300">
+                {/* Profile photo with light background */}
+                <div className="relative z-10 w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[420px] lg:h-[420px] rounded-full overflow-hidden border-4 border-white/30 bg-white/10">
                   <img 
                     src="/lovable-uploads/38f0256f-e021-43a9-99c9-abc1d77a10d6.png" 
                     alt="Bhuvanesh M - Computer Science Student" 
