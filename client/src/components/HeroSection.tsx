@@ -18,12 +18,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="relative rounded-3xl p-8 md:p-12 overflow-hidden" style={{background: 'linear-gradient(to bottom right, hsl(24, 90%, 58%), hsl(30, 100%, 70%))'}}>
           {/* Decorative elements */}
-          <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+          <div className="absolute top-8 left-8 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
             <span className="text-white text-sm font-medium">Hello!</span>
-          </div>
-          
-          <div className="absolute top-4 right-32 flex items-center space-x-1 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1">
-            {[...Array(5)].map((_, i) => <Star key={i} size={12} className="fill-yellow-400 text-yellow-400" />)}
           </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -45,9 +41,20 @@ const HeroSection = () => {
                 <Button onClick={scrollToExperience} size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold rounded-full px-8">
                   View Portfolio
                 </Button>
-                <Button onClick={scrollToContact} variant="outline" size="lg" className="border-white/50 text-white bg-white/10 hover:bg-white hover:text-primary rounded-full px-8">
-                  <Mail className="mr-2 h-4 w-4" />
-                  Hire me
+                <Button 
+                  onClick={() => {
+                    // Create a link to download the resume
+                    const link = document.createElement('a');
+                    link.href = '/Bhuvanesh_M_Resume.png';
+                    link.download = 'Bhuvanesh_M_Resume.png';
+                    link.click();
+                  }}
+                  variant="outline" 
+                  size="lg" 
+                  className="border-white/50 text-white bg-white/10 hover:bg-white hover:text-primary rounded-full px-8"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
                 </Button>
               </div>
             </div>
@@ -55,8 +62,8 @@ const HeroSection = () => {
             {/* Right content - Profile photo */}
             <div className="lg:w-1/2 flex justify-center relative">
               <div className="relative">
-                {/* Experience badge - above image */}
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white rounded-2xl p-4 shadow-lg z-20">
+                {/* Experience badge - bottom right of image */}
+                <div className="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-lg z-20">
                   <div className="text-center">
                     <div className="flex justify-center mb-1">
                       {[...Array(5)].map((_, i) => <Star key={i} size={14} className="fill-primary text-primary" />)}
@@ -66,11 +73,8 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                {/* Background circle */}
-                <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-white/20 to-white/10 rounded-full absolute inset-0"></div>
-                
-                {/* Profile photo */}
-                <div className="relative z-10 w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/30 bg-white/10">
+                {/* Profile photo - larger and without background circle */}
+                <div className="relative z-10 w-96 h-96 md:w-[420px] md:h-[420px] rounded-full overflow-hidden border-4 border-white/30">
                   <img 
                     src="/lovable-uploads/38f0256f-e021-43a9-99c9-abc1d77a10d6.png" 
                     alt="Bhuvanesh M - Computer Science Student" 
