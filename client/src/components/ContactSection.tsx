@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Download } from 'lucide-react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const ContactSection = () => {
   const contactInfo = [
@@ -21,6 +22,21 @@ const ContactSection = () => {
       label: 'Location',
       value: 'Ariyalur, Tamil Nadu',
       href: '#',
+    },
+  ];
+
+  const socialLinks = [
+    {
+      icon: FaLinkedin,
+      label: 'LinkedIn',
+      value: 'bhuvanesh-m-8745a8300',
+      href: 'https://in.linkedin.com/in/bhuvanesh-m-8745a8300',
+    },
+    {
+      icon: FaGithub,
+      label: 'GitHub',
+      value: 'bhuvaneshM05',
+      href: 'https://github.com/bhuvaneshM05',
     },
   ];
 
@@ -60,6 +76,28 @@ const ContactSection = () => {
                       </div>
                     );
                   })}
+                </div>
+
+                {/* Social Links */}
+                <div className="mt-8 pt-6 border-t border-border">
+                  <h4 className="font-semibold mb-4">Connect with me</h4>
+                  <div className="flex space-x-4">
+                    {socialLinks.map((social, index) => {
+                      const IconComponent = social.icon;
+                      return (
+                        <a
+                          key={index}
+                          href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center space-x-2 bg-gradient-to-r from-primary to-primary-glow rounded-lg p-3 text-white hover:shadow-lg transition-all duration-200 hover:scale-105"
+                        >
+                          <IconComponent className="h-5 w-5" />
+                          <span className="text-sm font-medium">{social.label}</span>
+                        </a>
+                      );
+                    })}
+                  </div>
                 </div>
 
                 {/* Call to Action */}
