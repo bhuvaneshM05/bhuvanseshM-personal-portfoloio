@@ -40,7 +40,7 @@ All colors MUST be HSL.
 
     /* Hero section colors */
     --hero-bg: 24 90% 58%;
-    --hero-bg-light: 30 100% 70%;
+    --hero-light: 30 100% 70%;
     --hero-text: 0 0% 100%;
     --hero-secondary: 0 0% 90%;
 
@@ -103,7 +103,7 @@ All colors MUST be HSL.
     --ring: 24 90% 58%;
 
     --hero-bg: 24 90% 58%;
-    --hero-bg-light: 30 100% 70%;
+    --hero-light: 30 100% 70%;
     --dark-bg: 222.2 84% 4.9%;
     --dark-card: 217.2 32.6% 17.5%;
     --sidebar-background: 240 5.9% 10%;

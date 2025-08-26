@@ -16,7 +16,7 @@ const HeroSection = () => {
   };
   return <section id="home" className="min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-4">
-        <div className="relative bg-gradient-to-br from-hero-bg to-hero-light rounded-3xl p-8 md:p-12 overflow-hidden">
+        <div className="relative rounded-3xl p-8 md:p-12 overflow-hidden" style={{background: 'linear-gradient(to bottom right, hsl(24, 90%, 58%), hsl(30, 100%, 70%))'}}>
           {/* Decorative elements */}
           <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
             <span className="text-white text-sm font-medium">Hello!</span>

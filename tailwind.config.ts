@@ -24,6 +24,16 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
+        },
+        hero: {
+          bg: "hsl(var(--hero-bg))",
+          light: "hsl(var(--hero-light))",
+        },
+        dark: {
+          bg: "hsl(var(--dark-bg))",
+          foreground: "hsl(var(--dark-foreground))",
+          card: "hsl(var(--dark-card))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
