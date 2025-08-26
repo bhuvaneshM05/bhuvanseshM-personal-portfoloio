@@ -29,7 +29,7 @@ const HeroSection = () => {
                 I'm <span className="text-white">Bhuvanesh</span>,
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 mb-6">
-                Computer Science Student
+                Computer Science and Business System Student
               </h2>
               
               <p className="text-white/80 text-base sm:text-lg mb-8 max-w-md mx-auto lg:mx-0">
