@@ -126,11 +126,26 @@ const ContactSection = () => {
             <Card>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-                <div className="space-y-4">
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    const formData = new FormData(e.currentTarget);
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const subject = formData.get('subject');
+                    const message = formData.get('message');
+                    
+                    const mailtoLink = `mailto:bhuvan186sh@email.com?subject=${encodeURIComponent(subject as string)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+                    window.location.href = mailtoLink;
+                  }}
+                  className="space-y-4"
+                >
                   <div>
                     <label className="block text-sm font-medium mb-2">Name</label>
                     <input 
                       type="text" 
+                      name="name"
+                      required
                       className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
                       placeholder="Your name"
                     />
@@ -139,6 +154,8 @@ const ContactSection = () => {
                     <label className="block text-sm font-medium mb-2">Email</label>
                     <input 
                       type="email" 
+                      name="email"
+                      required
                       className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
                       placeholder="your.email@example.com"
                     />
@@ -147,6 +164,8 @@ const ContactSection = () => {
                     <label className="block text-sm font-medium mb-2">Subject</label>
                     <input 
                       type="text" 
+                      name="subject"
+                      required
                       className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
                       placeholder="Subject"
                     />
@@ -155,15 +174,17 @@ const ContactSection = () => {
                     <label className="block text-sm font-medium mb-2">Message</label>
                     <textarea 
                       rows={4}
+                      name="message"
+                      required
                       className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
                       placeholder="Your message..."
                     ></textarea>
                   </div>
-                  <Button className="w-full">
+                  <Button type="submit" className="w-full">
                     <Mail className="mr-2 h-4 w-4" />
                     Send Message
                   </Button>
-                </div>
+                </form>
               </CardContent>
             </Card>
           </div>
