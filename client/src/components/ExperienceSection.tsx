@@ -10,13 +10,12 @@ const ExperienceSection = () => {
       duration: '2025',
       type: 'Internship',
       achievements: [
-        'Designed and developed an AI-powered CRM platform integrated with a Retrieval-Augmented Generation (RAG) chatbot using React.js, Node.js/Express.js, FastAPI, and MongoDB.',
-        'Implemented semantic document search by converting technical product manuals into high-dimensional vector embeddings stored in ChromaDB, enabling accurate question answering.',
-        'Integrated Large Language Models (LLMs) with RAG systems to generate reliable responses with company-specific knowledge, eliminating AI hallucinations.',
-        'Developed core CRM functionalities including secure user authentication, lead management modules, and client communication tracking workflows.',
-        'Designed and documented system architecture, entity-relationship models, and data flow processes to ensure system scalability and security.'
+        'Built a full-stack CRM platform with an integrated RAG-based AI chatbot (React.js, Node.js/Express.js, MongoDB, FastAPI, ChromaDB) enabling centralized customer/lead management and document-grounded Q&A.',
+        'Implemented user authentication, database design, and the complete embedding-retrieval-generation pipeline for accurate, hallucination-free AI responses grounded in company documents.',
+        'Supported the software team with device booting/flashing and quality control (QC) testing of a handheld navigation device.',
+        'Completed Map Display System training as part of the embedded systems and navigation domain at Elena Geo Tech.',
       ],
-      technologies: ['React.js', 'FastAPI', 'Node.js', 'ChromaDB', 'MongoDB', 'RAG Chatbots', 'LLM Integration', 'Python']
+      technologies: ['React.js', 'FastAPI', 'Node.js', 'Express.js', 'ChromaDB', 'MongoDB', 'RAG Chatbots', 'LLM Integration', 'Python']
     },
     {
       role: 'Intern',

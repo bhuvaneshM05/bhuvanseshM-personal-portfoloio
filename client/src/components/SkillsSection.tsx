@@ -39,6 +39,7 @@ const SkillsSection = () => {
   const languages = [
     { name: 'English', level: 'Fluent' },
     { name: 'Tamil', level: 'Fluent' },
+    { name: 'Telugu', level: 'Conversational' },
   ];
 
   return (

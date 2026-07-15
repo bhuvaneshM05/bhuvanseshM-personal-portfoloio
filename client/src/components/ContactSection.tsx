@@ -59,6 +59,7 @@ const ContactSection = () => {
                 <div className="space-y-6">
                   {contactInfo.map((info, index) => {
                     const IconComponent = info.icon;
+                    const isLocation = info.label === 'Location';
                     return (
                       <div key={index} className="flex items-center space-x-4">
                         <div className="bg-gradient-to-r from-primary to-primary-glow rounded-lg p-3">
@@ -66,12 +67,18 @@ const ContactSection = () => {
                         </div>
                         <div>
                           <p className="text-sm text-muted-foreground">{info.label}</p>
-                          <a 
-                            href={info.href}
-                            className="text-lg font-medium hover:text-primary transition-colors"
-                          >
-                            {info.value}
-                          </a>
+                          {isLocation ? (
+                            <span className="text-lg font-medium">
+                              {info.value}
+                            </span>
+                          ) : (
+                            <a 
+                              href={info.href}
+                              className="text-lg font-medium hover:text-primary transition-colors"
+                            >
+                              {info.value}
+                            </a>
+                          )}
                         </div>
                       </div>
                     );
