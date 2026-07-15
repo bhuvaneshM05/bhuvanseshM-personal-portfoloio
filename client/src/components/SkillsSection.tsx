@@ -6,26 +6,26 @@ const SkillsSection = () => {
     {
       title: 'Programming Languages',
       icon: Code,
-      skills: ['C', 'C++', 'R'],
-      description: 'Strong foundation in core programming languages for system development and data analysis.',
+      skills: ['C', 'C++', 'Python', 'R'],
+      description: 'Strong foundation in core programming languages for system development, AI services, and data analysis.',
     },
     {
       title: 'Database Management',
       icon: Database,
-      skills: ['Oracle SQL'],
-      description: 'Experience with database design, queries, and data management using Oracle SQL.',
+      skills: ['MongoDB', 'ChromaDB', 'Oracle SQL'],
+      description: 'Experience with document databases, vector databases for semantic search, and traditional relational databases.',
     },
     {
-      title: 'Web Technologies',
+      title: 'Web & AI Technologies',
       icon: Globe,
-      skills: ['HTML', 'CSS'],
-      description: 'Frontend development skills for creating responsive and modern web interfaces.',
+      skills: ['React.js', 'Node.js', 'Express.js', 'FastAPI', 'RAG Chatbots', 'LLMs'],
+      description: 'Full-stack development capabilities integrating modern frontend frameworks with AI-powered RAG backend APIs.',
     },
     {
       title: 'Enterprise Tools',
       icon: Cpu,
       skills: ['Rational Suite', 'ERP Systems'],
-      description: 'Hands-on experience with enterprise software and system integration.',
+      description: 'Hands-on experience with enterprise systems, business processes, and system integration.',
     },
   ];
 

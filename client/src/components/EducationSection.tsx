@@ -96,9 +96,9 @@ const EducationSection = () => {
                 </div>
                 <div className="text-center">
                   <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-                    <span className="text-2xl font-bold text-primary">1</span>
+                    <span className="text-2xl font-bold text-primary">2</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">Internship</p>
+                  <p className="text-sm text-muted-foreground">Internships</p>
                 </div>
               </div>
             </CardContent>
