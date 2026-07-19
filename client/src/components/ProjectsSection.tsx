@@ -59,7 +59,7 @@ const projects: Project[] = [
   },
   {
     id: 'saarthi',
-    tag: 'Group Project · Product Design',
+    tag: 'Solo Project · Product Design',
     tagColor: 'from-violet-500 to-purple-400',
     title: 'Saarthi AI',
     subtitle: 'AI Sales Co-Pilot for Indian B2B Teams · 2026',
@@ -70,7 +70,7 @@ const projects: Project[] = [
     accentColor: 'text-violet-400',
     icon: Zap,
     detail: {
-      context: 'Group Project · Business Proposal / Product Design · 2026',
+      context: 'Solo Project · Business Proposal / Product Design · 2026',
       problem:
         'Indian B2B sales teams face two compounding pain points: lead generation tools built for the US market poorly cover Indian companies, forcing reps to waste time on badly-targeted prospect lists; and sales talent ramps up slowly, with most reps feeling under-skilled and most formal training forgotten within 90 days. CRMs, prospecting databases, and training vendors each solve only one piece of the problem — none close the loop between finding the right buyer and rehearsing the conversation that closes them.',
       howItWorks:
@@ -112,11 +112,10 @@ const projects: Project[] = [
         'Built the adaptive quiz generator, blending quiz-attempt history with lesson-time emotional struggle percentage',
         'Built session-grouping logic (30-minute-gap heuristic) and the focus-scoring algorithm powering learner and instructor reports',
         'Instrumented the inference service with signal-coverage logging/diagnostics to verify all four weighted modules were contributing in practice',
-        'Re-implemented the full application layer as a parallel MERN stack (Express + MongoDB + React) while leaving the Python/MediaPipe inference service untouched — validating the architecture\'s portability',
       ],
       techStack: ['FastAPI + SQLAlchemy', 'Express.js + Mongoose', 'Next.js 14 (TypeScript)', 'React (Vite)', 'MediaPipe', 'SQLite / MongoDB', 'JWT + bcrypt', 'Recharts', 'Tailwind CSS'],
       outcome:
-        'A working platform where three learner roles (learner, instructor, admin) each get a purpose-built view into the same underlying emotion data — students get real-time nudges, instructors get visibility into why a lesson is or isn\'t landing, and the whole pipeline was proven portable across two full backend/frontend stacks without touching the ML core.',
+        'A working platform where three learner roles (learner, instructor, admin) each get a purpose-built view into the same underlying emotion data — students get real-time nudges, instructors get visibility into why a lesson is or isn\'t landing, and the whole pipeline is built to be highly robust and modular.',
     },
   },
 ];

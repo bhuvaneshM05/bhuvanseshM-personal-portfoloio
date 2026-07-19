@@ -23,10 +23,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-semibold">My Objective</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Motivated and detail-oriented BTech Computer Science and Business Systems student 
-                with strong programming skills in C and C++, seeking an internship opportunity at 
-                an IT company. Eager to apply academic knowledge in real-world projects, contribute 
-                to innovative solutions, and gain hands-on experience in software development and teamwork.
+                Motivated B.Tech Computer Science and Business Systems graduate with strong programming skills in Python and C++, combined with a practical understanding of business processes, ERP systems, and data-driven decision-making gained through academic projects and internship experience. Seeking to begin a career in software development where I can apply this blend of technical and business knowledge to build real-world solutions, contribute to organizational goals, and grow as a well-rounded engineer within a dynamic team environment.
               </p>
             </CardContent>
           </Card>
