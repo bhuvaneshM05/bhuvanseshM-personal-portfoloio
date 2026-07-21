@@ -14,8 +14,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'bhuvan186sh@email.com',
-      href: 'mailto:bhuvan186sh@email.com',
+      value: 'bhuvan186sh@gmail.com',
+      href: 'mailto:bhuvan186sh@gmail.com',
     },
     {
       icon: MapPin,
